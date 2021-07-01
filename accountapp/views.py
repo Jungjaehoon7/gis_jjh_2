@@ -2,6 +2,8 @@ from django.http import HttpResponse
 
 
 # Create your views here.
+from django.shortcuts import render
+
 
 def hello_world(request):
-    return HttpResponse('hello world!')
+    return render(request,'accountapp/hello_world.html')
